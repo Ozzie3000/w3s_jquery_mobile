@@ -40,7 +40,7 @@
 
 	  <div data-role="main" class="ui-content">
 	    <p>Click on the button below to open the Panel.</p>
-	    <a href="#a_panel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a>
+	    <a href="#a_panel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" id="btn_1">Open Panel</a>
 	  </div>
 
 	  <div data-role="footer">
@@ -55,6 +55,13 @@
 
 
 	$(document).ready(function(){
+		$("#btn_1").click(function(){
+			if($(this).text() == "Open Panel"){
+				$(this).text("Close Panel");
+			//if($(this).text() == "Close Panel"){
+				//$(this).text("Open Panel");
+			};
+		});
 
 	}); //end doc ready
 </script>
