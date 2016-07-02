@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>JS and jQuery mobile| data dismissible true</title>
+<title>JS and jQuery mobile| data-dismissible true</title>
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
 <!-- server
@@ -27,7 +27,26 @@
 </head>
 <body>
 
-	
+	<div data-role="page" id="page1">
+	  <div data-role="panel" id="panel_1" data-dismissible="true">
+	  	<h2>Panel Header</h2>
+	    <p>This panel has the data-dismissible attribute equal to "true". You have only 4 options</p>
+	    <p>Close the panel by pressing the Esc key, clicking "open", clicking anywhere left panel, or by swiping to the left.</p>
+	  </div>
+
+	  <div data-role="header">
+	    <h1>Page Header</h1>
+	  </div>
+
+	  <div data-role="main" class="ui-content">
+	  	<p>Click the button to open the panel</p>
+	  	<a href="#panel_1" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a>
+	  </div>
+
+	  <div data-role="footer">
+	    <h1>Page Footer</h1>
+	  </div>
+	</div>
  
 
 <br><br><br>
