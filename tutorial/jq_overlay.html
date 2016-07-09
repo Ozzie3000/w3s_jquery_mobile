@@ -28,7 +28,7 @@
 <body>
 
 	<div data-role="page" id="page_1">
-	  <div data-role="panel" id="overlayPanel" data-display="overlay">
+	  <div data-role="panel" id="overlay_panel" data-display="overlay">
 	  	<h2>Overlay Panel</h2>
 	    <p>You can close the panel by 
 	    	<ul>
@@ -69,6 +69,13 @@
 
 	  <div data-role="header">
 	    <h1>Page Header</h1>
+	  </div>
+
+	  <div data-role="main" class="ui-content">
+	    <p>Click on one of the the buttons to open the Panel with different display modes.</p>
+	    <a href="#overlay_panel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Overlay Panel</a>
+	    <a href="#reveal_panel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Reveal Panel</a>
+	    <a href="#push_panel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Push Panel</a>
 	  </div>
 	</div>
  
