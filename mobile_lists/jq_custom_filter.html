@@ -36,8 +36,11 @@
 		    <h2>My Phonebook</h2>
 		    <p>Here we have use data-filtertext="fav" on "Baca". You are no longer able to search for the list item "Baca" anymore. You type the following in order to find it: "f, a, v or fav".)</p>
 		    <form class="ui-filterable">
-		      <input id="filter" data-type="search">
+		      <input id="filter1" data-type="search">
 		    </form>
+
+		    <ul data-role="listview" data-filter="true" data-input="#filter1" data-autodividers="true" data-inset="true">
+		    </ul>
 		  </div>
 
 			<div data-role="footer">
