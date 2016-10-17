@@ -36,7 +36,18 @@
 	    <a href="#popup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Reveal Popup Form</a>
 
 	    <div data-role="popup" id="popup1" class="ui-content" style="min-width:250px;">
-	      
+	      <form method="post" action="sampleform.asp">
+	        <div>
+	          <h3>Login information</h3>
+	          <label for="uname" class="ui-hidden-accessible">Username:</label>
+	          <input type="text" name="user" id="uname" placeholder="Username">
+	          <label for="psw" class="ui-hidden-accessible">Password:</label>
+	          <input type="password" name="passw" id="psw" placeholder="Password">
+	          <label for="stay_in">Keep me logged in</label>
+	          <input type="checkbox" name="login" id="stay_in" value="1" data-mini="true">
+	          <input type="submit" data-inline="true" value="Log in">
+	        </div>
+	      </form>
 	    </div>
 
 	  </div>
