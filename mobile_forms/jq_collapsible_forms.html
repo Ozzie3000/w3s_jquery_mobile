@@ -32,6 +32,26 @@
 			<h1>Collapsible forms</h1>
 		</div>
 
+		<div data-role="main" class="ui-content">
+	    <form method="post" action="sampleform.asp">
+	      <fieldset data-role="collapsible">
+	        <legend>Click me - So that I may collapse!</legend>
+	          <label for="fullname">Full Name:</label>
+	          <input type="text" name="text" id="fullname">
+	          <p>Favorite Color:</p>
+	        <div data-role="controlgroup">
+	          <label for="red">Red</label>
+	          <input type="checkbox" name="favcolor" id="red" value="red">
+	          <label for="green">Green</label>
+	          <input type="checkbox" name="favcolor" id="green" value="green">
+	          <label for="blue">Blue</label>
+	          <input type="checkbox" name="favcolor" id="blue" value="blue">
+	        </div>
+	      <input type="submit" data-inline="true" value="Submit">
+	      </fieldset>
+	    </form>
+	  </div>
+
 		<div data-role="footer">
 			<h1>Footer: text</h1>
 		</div>
