@@ -32,6 +32,26 @@
 			<h1>Changing icons</h1>
 		</div>
 
+		<div data-role="main" class="ui-content">
+	    <form method="post" action="sampleform.asp">
+	        <fieldset data-role="controlgroup">
+	          <legend>Two examples. Default icon is down arrow chevron.  2nd select uses plus</legend>
+	            <label for="color">Select colors</label>
+	            <select name="color" id="color">
+	              <option value="blue">Blue</option>
+	              <option value="green">Green</option>
+	            </select>
+
+	            <label for="time">Select Time</label>
+	            <select name="time" id="time" data-icon="plus">
+	              <option value="05">05:00</option>
+	              <option value="06">06:00</option>
+	            </select>
+	        </fieldset>
+	      <input type="submit" data-inline="true" value="Submit">
+	    </form>
+	  </div>
+
 		<div data-role="footer">
 			<h1>Footer: text</h1>
 		</div>
