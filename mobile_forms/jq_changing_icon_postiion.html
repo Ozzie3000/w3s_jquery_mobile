@@ -29,8 +29,22 @@
 
 	<div data-role="page" id="page_1">
 		<div data-role="header">
-			<h1>Checkboxes</h1>
+			<h1>Changing Icon posistions</h1>
 		</div>
+
+		<div data-role="main" class="ui-content">
+	    <form method="post" action="sampleform.asp">
+        <fieldset data-role="controlgroup">
+          <legend>The icon is on the left side of the select menu (default is right).</legend>
+	          <label for="day">Select Day</label>
+	          <select name="day" id="day" data-iconpos="left">
+	              <option value="friday">Friday</option>
+	              <option value="saturday">Saturday</option>
+	            </select>
+	        </fieldset>
+	      <input type="submit" data-inline="true" value="Submit">
+	    </form>
+	  </div>
 
 		<div data-role="footer">
 			<h1>Footer: text</h1>
