@@ -35,11 +35,17 @@
 		<div data-role="main" class="ui-content">
 	    <form method="post" action="sampleform.asp">
         <fieldset data-role="controlgroup">
-          <legend>The icon is on the left side of the select menu (default is right).</legend>
+          <legend>The icon is on the left side of the select menu (default is right). See numbers for default</legend>
 	          <label for="day">Select Day</label>
 	          <select name="day" id="day" data-iconpos="left">
 	              <option value="friday">Friday</option>
 	              <option value="saturday">Saturday</option>
+	          </select>
+
+	          <label for="number">Select Number</label>
+	          <select name="number" id="number">
+	              <option value="three">Three</option>
+	              <option value="four">Four</option>
 	            </select>
 	        </fieldset>
 	      <input type="submit" data-inline="true" value="Submit">
