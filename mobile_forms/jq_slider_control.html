@@ -33,14 +33,23 @@
 		</div>
 
 		<div data-role="main" class="ui-content">
-	    <form method="post" action="sampleform.asp">
+	    <form method="post" action="sampleform.asp" id="form1">
 	      <label for="effort">In it to win it? Effort?:</label>
 	      <input type="range" name="effort" id="effort" value="50" min="0" max="100">
 	      <input type="submit" data-inline="true" value="Submit">
-	      <br>
+	    </form>
+	    <br>
 
+	    <form method="post" action="sampleform.asp" id="form2">
 	      <label for="probability">Probability of win?:</label>
 	      <input type="range" name="probability" id="probability" value="60" min="0" max="100">
+	      <input type="submit" data-inline="true" value="Submit">
+	    </form>
+	    <br>
+
+	    <form method="post" action="sampleform.asp" id="form3">
+	    	<label for="happiness">Happiness?:</label>
+	      <input type="range" name="happiness" id="happiness" value="90" min="50" max="100">
 	      <input type="submit" data-inline="true" value="Submit">
 	    </form>
 	  </div>
