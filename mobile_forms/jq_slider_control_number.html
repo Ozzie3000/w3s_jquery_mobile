@@ -29,8 +29,16 @@
 
 	<div data-role="page" id="page_1">
 		<div data-role="header">
-			<h1></h1>
+			<h1>Slider bar with adjusting numbers</h1>
 		</div>
+
+		<div data-role="main" class="ui-content">
+	    <form method="post" action="sampleform.asp">
+	      <label for="percentage">Percentage:</label>
+	      <input type="range" name="percentage" id="percentage" value="50" min="0" max="100" data-show-value="true">
+	      <input type="submit" data-inline="true" value="Submit">
+	    </form>
+	  </div>
 
 		<div data-role="footer">
 			<h1>Footer: text</h1>
