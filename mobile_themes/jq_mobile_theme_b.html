@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>JS and jQuery mobile| </title>
+<title>JS and jQuery mobile| form theme b</title>
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
 <!-- server
@@ -27,10 +27,28 @@
 </head>
 <body>
 
-	<div data-role="page" id="page_1">
+	<div data-role="page" id="page_1" data-theme="b">
 		<div data-role="header">
-			<h1></h1>
+			<h1>Form theme b</h1>
 		</div>
+
+		<div data-role="main" class="ui-content">
+	    <p>Some Text..</p>
+	    <a href="#">A Standard Text Link</a>
+	    <a href="#" class="ui-btn">Link Button</a>
+	    <p>A List View:</p>
+	    <ul data-role="listview" data-autodividers="true" data-inset="true">
+	      <li><a href="#">Abraham</a></li>
+	      <li><a href="#">Bethesda</a></li>
+	    </ul>
+	    <label for="uname">Input Field:</label>
+	      <input type="text" name="uname" id="uname" placeholder="username..">
+	    <label for="switch">Toggle Switch:</label>
+	      <select name="switch" id="switch" data-role="slider">
+	        <option value="on">On</option>
+	        <option value="off" selected>Off</option>
+	      </select>
+	  </div>
 
 		<div data-role="footer">
 			<h1>Footer: text</h1>
