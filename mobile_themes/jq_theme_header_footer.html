@@ -34,7 +34,7 @@
 
 		<div data-role="main" class="ui-content">
 	    <p>stuff stuff stuff</p>
-	    <a href="#" class="ui-btn ui-btn-a|b">Button</a>
+	    <a href="#" class="ui-btn ui-btn-a|b" id="nono">Useless Button don't click me</a>
 	    <p>more stuff <a href="#">link to nowhere</a> even slightly more stuff!</p>
 	  </div>
 
@@ -50,7 +50,9 @@
 
 
 	$(document).ready(function(){
-
+		$("#nono").click(function(){
+			alert("I said this was Useless");
+		});
 	}); //end doc ready
 </script>
 </body>
