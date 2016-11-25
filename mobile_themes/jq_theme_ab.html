@@ -27,34 +27,40 @@
 </head>
 <body>
 
-	<div data-role="page" id="page_1">
+	<div data-role="page" id="page1" data-theme="a">
 		<div data-role="header">
 			<h1>Theme A/B</h1>
 		</div>
 
-		<div data-role="main" class="ui-content" theme="a">
+		<div data-role="main" class="ui-content">
 	    <p>Theme A div</p>
-	    <a href="#" class="ui-btn ui-btn-a|b" id="nono">Useless Button don't click me</a>
-	    <p>more stuff <a href="#">link to nowhere</a> even slightly more stuff!</p>
-	    <br>
-	    <a href="#" class="ui-btn ui-btn-a" id="nono_a">Useless A Button don't click me</a>
-	    <br>
-	    <a href="#" class="ui-btn ui-btn-b" id="nono_b">Useless B Button don't click me</a>
-	  </div>
-
-	  <div data-role="main" class="ui-content" theme="b">
-	    <p>Theme B div</p>
 	    <a href="#" class="ui-btn ui-btn-a|b" id="nono">(a/b)Useless Button don't click me</a>
 	    <p>more stuff <a href="#">link to nowhere</a> even slightly more stuff!</p>
 	    <br>
-	    <a href="#" class="ui-btn ui-btn-a" id="nono_a">Useless A Button don't click me</a>
+	    <a href="#" class="ui-btn ui-btn-a" id="nono_a1">Useless A Button don't click me</a>
 	    <br>
 	    <a href="#" class="ui-btn ui-btn-b" id="nono_b">Useless B Button don't click me</a>
+	    <a href="#page2" class="ui-btn ui-btn-b" id="nextPage">Page 2</a>
 	  </div>
+
 
 		<div data-role="footer">
 			<h1>Footer: text</h1>
 		</div>
+	</div>
+
+
+  <div data-role="page" id="page2" data-theme="b">
+	  <div data-role="main" class="ui-content">
+	    <p>Theme B div.  The a/b will match the theme of the page</p>
+	    <a href="#" class="ui-btn ui-btn-a|b" id="nono2">(a/b)Useless Button don't click me</a>
+	    <p>more stuff <a href="#">link to nowhere</a> even slightly more stuff!</p>
+	    <br>
+	    <a href="#" class="ui-btn ui-btn-a" id="nono_a2">Useless A Button don't click me</a>
+	    <br>
+	    <a href="#" class="ui-btn ui-btn-b" id="nono_b2">Useless B Button don't click me</a>
+	    <a href="#page1" class="ui-btn ui-btn-b" id="prevPage">Page 1</a>
+	  </div>
 	</div>
  
 
