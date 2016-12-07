@@ -35,11 +35,20 @@
 		<div data-role="main" class="ui-content">
 	    <h2>Ordered List</h2>
 	    <ol data-role="listview" data-theme="b">
-	      <li><a href="#">List Item 1</a></li>
+	      <li><a href="#">List Item 1 (parent theme b)</a></li>
 	      <li><a href="#">List Item 2</a></li>
 	      <li data-theme="a"><a href="#">List Item 3 theme a</a></li>
-	      <li><a href="#">List Item</a></li>
+	      <li data-theme="a/b"><a href="#">List Item 4 theme a/b</a></li>
 	    </ol>
+	    <br>
+	    <h2>Unordered List</h2>
+	    <ul data-role="listview">
+	      <li><a href="#">List Item 1 (parent no theme)</a></li>
+	      <li data-theme="a"><a href="#">List Item 2 theme a</a></li>
+	      <li data-theme="b"><a href="#">List Item 3 theme b</a></li>
+	      <li data-theme="a/b"><a href="#">List Item 4 theme a/b</a></li>
+	    </ul>
+	    <br>
 	  </div>
 
 		<div data-role="footer">
