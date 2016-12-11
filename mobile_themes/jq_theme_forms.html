@@ -29,8 +29,18 @@
 
 	<div data-role="page" id="page_1">
 		<div data-role="header">
-			<h1></h1>
+			<h1>Form theming</h1>
 		</div>
+
+		<div data-role="main" class="ui-content">
+		  <form method="post" action="sampleform.asp">
+		  <div class="ui-fieldcontain">
+		    <label for="fname">First name:</label>
+		    <input type="text" fname="text" id="fname" placeholder="Your first name.." data-theme="b">
+		    <br><br>
+		  </div>
+		  </form>
+    </div>
 
 		<div data-role="footer">
 			<h1>Footer: text</h1>
