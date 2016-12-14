@@ -14,18 +14,18 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <style type="text/css">
-	.ui-bar-{
+	.ui-bar-rb{
     color: red;
     background-color: black;
 	}
 
-	.ui-body-{
+	.ui-body-wb{
     font-weight: 900;
     color: white;
     background-color: blue;
 	}
 
-	.ui-page-theme-{
+	.ui-page-theme-gr{
     font-weight: 900;
     background-color: green;
 	}
@@ -43,13 +43,21 @@
 </head>
 <body>
 
-	<div data-role="page" id="page_1">
-		<div data-role="header">
-			<h1></h1>
+	<div data-role="page" id="page_1" data-theme="gr">
+		<div data-role="header" data-theme="rb">
+			<h1>Header text</h1>
 		</div>
+		<br>
+		<br>
+
+		<div data-role="main" class="ui-content ui-body-wb">
+			<p>Body text goes here.  Are you sure?</p>
+		</div>
+		<br>
+		<br>
 
 		<div data-role="footer">
-			<h1>Footer: text</h1>
+			<h1>Footer: text: No custom theme so I match the page theme</h1>
 		</div>
 	</div>
  
