@@ -25,7 +25,7 @@
 	 code block
 	});
 	*/
-	
+
 	$(document).on("pagecreate", "#page_1", function(){
 		$("p").on("click", function(){
 			$(this).hide();
@@ -42,6 +42,12 @@
 	<div data-role="page" id="page_1">
 		<div data-role="header">
 			<h1>In jQuery Mobile there is a pagecreate event, which occurs when the page has been been created in the DOM, but before enhancement is complete. The second parameter ("") points to the selector of the page to specify the event(s) for:</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<p id="p1">Paragraph 1.  Click it</p>
+			<p id="p2">Paragraph 2.  Or click this one</p>
+			<p id="p3">Paragraph 3.  It really doesn't matter we all disappear if clicked</p>
 		</div>
 
 		<div data-role="footer">
