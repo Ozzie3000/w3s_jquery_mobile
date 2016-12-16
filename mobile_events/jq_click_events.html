@@ -32,7 +32,9 @@
 			<h1>Click events</h1>
 		</div>
 
-		<p id="p1"></p>
+		<p id="p1">Paragraph 1.  Click it</p>
+		<p id="p2">Paragraph 2.  Or click this one</p>
+		<p id="p3">Paragraph 3.  It really doesn't matter we all disappear if clicked</p>
 
 		<div data-role="footer">
 			<h1>Footer: text</h1>
@@ -46,7 +48,11 @@
 
 
 	$(document).ready(function(){
+		$("p").click(function(){
+			$(this).hide();
+		});
 
+		//
 	}); //end doc ready
 </script>
 </body>
