@@ -36,6 +36,9 @@
 		<p id="p2">Paragraph 2.  Or click this one</p>
 		<p id="p3">Paragraph 3.  It really doesn't matter we all disappear if clicked</p>
 
+		<br><br>
+		<button id="btn1" class="ui-btn ui-btn-inline ui-corner-all">Show paragraphs</button>
+
 		<div data-role="footer">
 			<h1>Footer: text</h1>
 		</div>
@@ -52,7 +55,12 @@
 			$(this).hide();
 		});
 
-		//
+		//onclick show p so no reload has to occur
+		function pChecker(){
+			$("p").show();
+		};
+
+		$("#btn1").click(pChecker);
 	}); //end doc ready
 </script>
 </body>
