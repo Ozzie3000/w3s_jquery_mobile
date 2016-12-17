@@ -20,12 +20,12 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
-	$(document).on("pagecrate", "page_1", function(){
+	$(document).on("pagecreate", "#page_1", function(){
 		$("p").on("tap", function(){
-			$(this).fade(1000);
+			$(this).fadeOut(1000);
 		});
 	});
-	
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
@@ -37,6 +37,17 @@
 		<div data-role="header">
 			<h1>Page create and tap event</h1>
 		</div>
+
+		<div data-role="main" class="ui-content">
+			<p id="p1">P1 in main content. Tap it</p>
+			<p id="p2">P2 in main content. Tap it</p>
+			<p id="p3">P3 in main content. Tap it</p>
+		</div>
+
+		<br>
+		<br>
+
+		<button id="btn1" class="ui-btn ui-btn-inline ui-corner-all">Show paragraphs</button>
 
 		<div data-role="footer">
 			<h1>Footer: text</h1>
@@ -50,7 +61,12 @@
 
 
 	$(document).ready(function(){
-
+		function pChecker(){
+			$("p").show();
+		};
+		$("#btn1").on("click", function(){
+			pChecker();
+		});
 	}); //end doc ready
 </script>
 </body>
