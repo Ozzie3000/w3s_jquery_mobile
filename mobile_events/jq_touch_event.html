@@ -20,6 +20,12 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagecrate", "page_1", function(){
+		$("p").on("tap", function(){
+			$(this).fade(1000);
+		});
+	});
+	
 	$(document).ready(function(){
 		
 	}); //end doc ready
