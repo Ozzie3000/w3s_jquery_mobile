@@ -23,7 +23,12 @@
 	$(document).on("pagecreate", "#page_1", function(){
 		$("p").on("taphold", function(){
 			$(this).hide();
-		});		
+		});
+
+//bring back paragraphs without reloading
+		$("#btn1").on("click", function(){
+			$("p").show();
+		});
 	});
 
 	$(document).ready(function(){
@@ -61,7 +66,7 @@
 
 
 	$(document).ready(function(){
-
+		
 	}); //end doc ready
 </script>
 </body>
