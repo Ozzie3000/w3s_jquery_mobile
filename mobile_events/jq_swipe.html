@@ -20,6 +20,18 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagecreate", "#page_1", function(){
+		$("p").on("swipe", function(){
+			$("span").text("I sense a disturbance in the Swipe");
+		});
+
+	// clear out text
+		function cleaner(){
+			$("span").text("");
+    }
+    setInterval(cleaner, 2500);
+	});
+	
 	$(document).ready(function(){
 		
 	}); //end doc ready
