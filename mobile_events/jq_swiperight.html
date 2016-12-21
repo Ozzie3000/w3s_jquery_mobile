@@ -20,12 +20,12 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
-	$(document).on("pagecreate", "page_1", function(){
+	$(document).on("pagecreate", "#page_1", function(){
 		$("p").on("swiperight", function(){
 			alert("You swiped correctly Daniel Son");
 		});
 	});
-	
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
@@ -36,6 +36,10 @@
 	<div data-role="page" id="page_1">
 		<div data-role="header">
 			<h1>Swipe right</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<p style="border:2px solid black; margin:5px; padding: 20px;">Put your finger in here and swipe to the right</p>
 		</div>
 
 		<div data-role="footer">
