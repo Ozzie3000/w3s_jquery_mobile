@@ -20,6 +20,12 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagecreate", "page_1", function(){
+		$("p").on("swiperight", function(){
+			alert("You swiped correctly Daniel Son");
+		});
+	});
+	
 	$(document).ready(function(){
 		
 	}); //end doc ready
