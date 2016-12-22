@@ -20,6 +20,15 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagecreate", "#page_1", function(){
+		$("#pL").on("swipeleft", function(){
+			alert("To the left, To the left");
+		});
+		$("#pR").on("swiperight", function(){
+			alert("To the right, To the right");
+		});
+	});
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
@@ -33,12 +42,12 @@
 		</div>
 
 		<div data-role="main" class="ui-content">
-			<p style="border:3px solid black; margin:5px; padding: 20px;">
+			<p id="pL" style="border:5px solid green; margin:5px; padding:20px; color:red;">
 				Put your finger in here and swipe to the left
 			</p>
 			<br>
 			<br>
-			<p style="border:3px solid black; margin:5px; padding: 20px;">
+			<p id="pR" style="border:5px solid green; margin:5px; padding:20px; color:red;">
 				Put your finger in here and swipe to the right
 			</p>
 		</div>
