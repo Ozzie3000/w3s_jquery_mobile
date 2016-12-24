@@ -20,6 +20,12 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagecreate", "#page_1", function(){
+		$(document).on("scrollstop", function(){
+			alert("Scroll stop detected or page just loaded for the first time");
+		});		
+	});
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
