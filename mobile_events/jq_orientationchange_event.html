@@ -20,6 +20,10 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("orientationchange", function(event_object){
+		alert("Orientation change detected. Now in: " + event_object.orientation);
+	});
+	
 	$(document).ready(function(){
 		
 	}); //end doc ready
