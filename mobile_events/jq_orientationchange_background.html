@@ -20,6 +20,16 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagecreate", function(event_object){
+		$(document).on("orientationchange", function(){
+			if(window.orientation == 0){
+				$("p").text("Portrait orientation").css({"background-color":"yellow", "font-size":"175%"});
+			} else {
+				$("p").text("Portrait landscape").css({"background-color":"yellow", "font-size":"275%"});
+			}
+		});
+	});
+	
 	$(document).ready(function(){
 		
 	}); //end doc ready
