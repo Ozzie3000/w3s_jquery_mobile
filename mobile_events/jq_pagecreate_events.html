@@ -31,7 +31,9 @@
 	});
 
 	$(document).ready(function(){
-		
+		$("#restart").on('click', function(){
+			window.location.reload();
+		});
 	}); //end doc ready
 </script>
 </head>
@@ -43,7 +45,7 @@
 		</div>
 
 		<div data-role="main" class="ui-content">
-			<button class="ui-button" data-inline="true">Refresh the page</button>
+			<button id="restart" class="ui-button" data-inline="true">Refresh the page</button>
 			<p id="p1">Now the page is loaded. </p>
 			<p id="p2"></p>
 		</div>
