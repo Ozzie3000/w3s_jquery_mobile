@@ -21,7 +21,13 @@
 -->
 <script type="text/javascript">
 	$(document).on("pagebeforecreate", function(){
-		alert("Used the 'pagebeforecreate' jQuery function.\n This is before the page is initialized.\n Try navigating here from a different place.");
+		alert("Used the 'pagebeforecreate' jQuery function.\n This is before the page is initialized.\n Try navigating here from a different place.\n Notice there is only one line below");
+	});
+
+	$(document).on("pagecreate", "#page_1", function(){
+		var rand =  Math.floor((Math.random() * 100) + 1)
+		$("#p2").html(rand + " This random number was filled in with pagecreate" +
+			"<br> Notice the number does not change until you close popup");
 	});
 
 	$(document).ready(function(){
@@ -37,6 +43,7 @@
 		</div>
 
 		<div data-role="main" class="ui-content">
+			<button class="ui-button" data-inline="true">Refresh the page</button>
 			<p id="p1">Now the page is loaded. </p>
 			<p id="p2"></p>
 		</div>
