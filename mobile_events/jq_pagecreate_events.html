@@ -20,6 +20,10 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagebeforecreate", function(){
+		alert("Used the 'pagebeforecreate' jQuery function.\n This is before the page is initialized.\n Try navigating here from a different place.");
+	});
+	
 	$(document).ready(function(){
 		
 	}); //end doc ready
