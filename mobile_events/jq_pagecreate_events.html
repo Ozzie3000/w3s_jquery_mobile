@@ -23,7 +23,7 @@
 	$(document).on("pagebeforecreate", function(){
 		alert("Used the 'pagebeforecreate' jQuery function.\n This is before the page is initialized.\n Try navigating here from a different place.");
 	});
-	
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
@@ -34,6 +34,11 @@
 	<div data-role="page" id="page_1">
 		<div data-role="header">
 			<h1>Page before create and page create</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<p id="p1">Now the page is loaded. </p>
+			<p id="p2"></p>
 		</div>
 
 		<div data-role="footer">
