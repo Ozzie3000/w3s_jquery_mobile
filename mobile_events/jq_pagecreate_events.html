@@ -34,6 +34,8 @@
 		$("#restart").on('click', function(){
 			window.location.reload();
 		});
+
+		$("#p3").text("This was filled in after the doc ready function");
 	}); //end doc ready
 </script>
 </head>
@@ -48,6 +50,7 @@
 			<button id="restart" class="ui-button" data-inline="true">Refresh the page</button>
 			<p id="p1">Now the page is loaded. </p>
 			<p id="p2"></p>
+			<p id="p3"></p>
 		</div>
 
 		<div data-role="footer">
