@@ -20,6 +20,12 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagecontainerload",function(event,data){
+	  alert("pagecontainerload event fired!\nURL: " + data.url);
+	});
+	$(document).on("pagecontainerloadfailed",function(event,data){
+	  alert("Sorry, requested page does not exist\n. : " + data.url);
+	});
 	$(document).ready(function(){
 		
 	}); //end doc ready
