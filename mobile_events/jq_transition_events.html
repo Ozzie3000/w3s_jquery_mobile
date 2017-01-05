@@ -29,6 +29,11 @@
 		console.log("page 2 showing");
 	  alert("pageshow event fired - page 2 is now visible");
 	});
+
+	$(document).on("pagebeforehide","#page_2",function(){
+		console.log("page 2 is going bye bye");
+	  alert("pagebeforehide event fired - page 2 is about to be hidden");
+	});	
 	$(document).ready(function(){
 		
 	}); //end doc ready
