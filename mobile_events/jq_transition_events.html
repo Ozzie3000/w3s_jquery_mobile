@@ -20,6 +20,10 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagebeforeshow","#page_2",function(){
+		console.log("page 2 coming up");
+	  alert("pagebeforeshow event fired - pagetwo is about to be shown");
+	});
 	$(document).ready(function(){
 		
 	}); //end doc ready
