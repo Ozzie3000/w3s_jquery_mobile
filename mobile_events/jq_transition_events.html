@@ -33,7 +33,13 @@
 	$(document).on("pagebeforehide","#page_2",function(){
 		console.log("page 2 is going bye bye");
 	  alert("pagebeforehide event fired - page 2 is about to be hidden");
-	});	
+	});
+
+	$(document).on("pagehide","#page_2",function(){
+		console.log("Where did page 2 go?");
+	  alert("pagehide event fired - page 2 is now well hidden");
+	});
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
