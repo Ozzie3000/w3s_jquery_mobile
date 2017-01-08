@@ -29,12 +29,27 @@
 
 	<div data-role="page" id="page_1">
 		<div data-role="header">
-			<h1>Dialog box</h1>
+			<h1>This is a page. You will see a dialog box by clicking the anchor</h1>
 		</div>
 
 		<div data-role="main" class="ui-content">
 			<p>Just a paragraph in the main div</p>
 			<a href="#diagbox_1">Just a link to a dialog box</a>
+		</div>
+
+		<div data-role="footer">
+			<h1>Footer: text for standard page</h1>
+		</div>
+	</div>
+
+	<div data-role="page" data-dialog="true" id="diagbox_1">
+		<div data-role="header">
+			<h1>This is a dialog box</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<p>Just a paragraph in the main div in the dialog box</p>
+			<a href="#page_1">Just a link to page 1</a>
 		</div>
 
 		<div data-role="footer">
