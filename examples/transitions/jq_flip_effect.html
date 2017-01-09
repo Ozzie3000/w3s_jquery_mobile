@@ -29,16 +29,31 @@
 
 	<div data-role="page" id="page_1">
 		<div data-role="header">
-			<h1>Flip effect</h1>
+			<h1>Flip effect. Page 1</h1>
 		</div>
 
 		<div data-role="main" class="ui-content">
 			<p>Just a paragraph for page 1 with flip effect.</p>
-			<a href="#page_2">Flip to page 2</a>
+			<a href="#page_2" data-transition="flip">Flip to page 2</a>
 		</div>
 
 		<div data-role="footer">
 			<h1>Footer: text for flip effect page 1</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="page_2">
+		<div data-role="header">
+			<h1>Flip effect. Page 2</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<p>Just a paragraph for page 2 with flip effect.</p>
+			<a href="#page_1" data-transition="flip">Flip to page 1</a>
+		</div>
+
+		<div data-role="footer">
+			<h1>Footer: text for flip effect page 2</h1>
 		</div>
 	</div>
  
