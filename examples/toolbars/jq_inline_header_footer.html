@@ -24,7 +24,18 @@
 -->
 <script type="text/javascript">
 	$(document).ready(function(){
-		
+		function spam(a,b){
+			console.log(a);
+			console.log(b);
+			while(a<9){
+				var num = Math.round(Math.random());
+				var b = b + num.toString();
+				a++;
+				console.log(b);
+			}
+			$("#bool").text(b);
+		}
+		spam(0,"");
 	}); //end doc ready
 </script>
 </head>
@@ -33,6 +44,14 @@
 	<div data-role="page" id="page_1">
 		<div data-role="header">
 			<h1>Inline Header</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<p>Window must be small enough to have a scroll bar</p>
+
+			<noscript><p>Turn your got damn JS on</p></noscript>
+			<p id="bool"></p>
+			<p>Winner Winner</p>
 		</div>
 
 		<div data-role="footer">
