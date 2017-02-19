@@ -16,7 +16,7 @@
 <style type="text/css">
 	#bool{
 		font-size: 40px;
-		font-weight: 00;
+		font-weight: 900;
 		background: #000000;
 		color: #0099ff;
 	}
@@ -31,7 +31,22 @@
 -->
 <script type="text/javascript">
 	$(document).ready(function(){
-
+		function spam(a,b){
+		/*debug
+			console.log(a);
+			console.log(b);
+			*/
+			while(a<999){
+				var num = Math.round(Math.random());
+				var b = b + " " + num.toString() + " ";
+				a++;
+				/*debug
+				console.log(b);
+				*/
+			}
+			$("#bool").text(b);
+		}
+		setInterval(function(){spam(0,"")},2000);
 	}); //end doc ready
 </script>
 </head>
