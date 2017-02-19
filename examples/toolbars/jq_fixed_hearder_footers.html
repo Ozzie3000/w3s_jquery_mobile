@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>JS and jQuery mobile| header and footer</title>
+<title>JS and jQuery mobile| fixed header and footer</title>
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
 <!-- server
@@ -16,9 +16,9 @@
 <style type="text/css">
 	#bool{
 		font-size: 40px;
-		font-weight: 700;
+		font-weight: 00;
 		background: #000000;
-		color: #00CC00;
+		color: #0099ff;
 	}
 </style>
 <!-- jquery 2 doesn't work with these examples
@@ -31,42 +31,28 @@
 -->
 <script type="text/javascript">
 	$(document).ready(function(){
-		function spam(a,b){
-		/*debug
-			console.log(a);
-			console.log(b);
-			*/
-			while(a<999){
-				var num = Math.round(Math.random());
-				var b = b + " " + num.toString() + " ";
-				a++;
-				/*debug
-				console.log(b);
-				*/
-			}
-			$("#bool").text(b);
-		}
-		setInterval(function(){spam(0,"")},2000);
+
 	}); //end doc ready
 </script>
 </head>
 <body>
 
 	<div data-role="page" id="page_1">
-		<div data-role="header">
-			<h1>Inline Header</h1>
+		<div data-role="header" data-position="fixed">
+			<h1>Fixed Header and Footer</h1>
 		</div>
 
 		<div data-role="main" class="ui-content">
-			<p>Window must be small enough to have a scroll bar</p>
+			<p><b>Important</b> Window must be small enough to have a scroll bar</p>
+			<p><b>Important</b> Tapping the screen will toggle header and footer bars</p>
 
-			<noscript><p>Turn your got damn JS on</p></noscript>
+			<noscript><p>You are starting to make me angry with this NO JS business</p></noscript>
 			<p id="bool"></p>
 			<p>Winner Winner</p>
 		</div>
 
-		<div data-role="footer">
-			<h1>Inline Footer</h1>
+		<div data-role="footer" data-position="fixed">
+			<h1>Fixed Footer</h1>
 		</div>
 	</div>
  
