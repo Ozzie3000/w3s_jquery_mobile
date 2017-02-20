@@ -53,9 +53,12 @@
 <body>
 
 	<div data-role="page" id="page_1">
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-fullscreen="true">
 			<h1>Fixed fullscreen Header and Footer</h1>
 		</div>
+
+		<!-- need this spacing. For some reason fullscreen moves up sibiling divs -->
+		<br><br><br>
 
 		<div data-role="main" class="ui-content">
 			<p><b>Important</b> Window must be small enough to have a scroll bar</p>
@@ -67,7 +70,7 @@
 			<p>Winner Winner</p>
 		</div>
 
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" data-position="fixed" data-fullscreen="true">
 			<h1>Fixed Footer</h1>
 			<p id="goteem"></p>
 		</div>
