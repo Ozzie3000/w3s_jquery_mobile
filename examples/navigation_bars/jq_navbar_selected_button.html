@@ -33,7 +33,19 @@
 	<div data-role="page" id="page_1">
 		<div data-role="header">
 			<h1>A navbar with selected buttons.  Highlighted</h1>
+			<div data-role="navbar">
+		    <ul>
+		      <li><a href="#" class="ui-btn-active" data-icon="home">Home</a></li>
+		      <li><a href="#page_2" data-icon="arrow-r" data-transition="slide">Page Two</a></li>
+		    </ul>
+		  </div>
 		</div>
+
+		<div data-role="main" class="ui-content">
+	    <p>With the ui-btn-active class on "home" you will notice that is highlighted (selected).</p>
+	    <p>If you click on the Page Two, you will notice that none of the buttons are highlighted (selected).</p>
+	    <p>When you come back "home" will no longer be highlighted</p>
+	  </div>
 
 		<div data-role="footer">
 			<h1>Footer: text</h1>
