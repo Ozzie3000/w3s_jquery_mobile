@@ -42,6 +42,8 @@
 					<li>Swipe</li>
 				</ul>
 			</p>
+
+			<a href="#page_1" id="close"data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">I'm bored. Let's roll</a>
 		</div>
 
 		<div data-role="header">
@@ -50,7 +52,7 @@
 
 		<div data-role="main" class="ui-content">
 			<p>The panel is hidden to the left</p>
-			<a href="#panel_1" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open already</a>
+			<a href="#panel_1" id="open" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open already</a>
 		</div>
 
 		<div data-role="footer">
@@ -65,6 +67,12 @@
 
 
 	$(document).ready(function(){
+	
+		$("#open").click(function(){
+			$("#close").animate({
+				top: '700px'
+			}, 30);
+		});
 
 	}); //end doc ready
 </script>
