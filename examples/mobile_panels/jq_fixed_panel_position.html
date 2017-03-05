@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JS and jQuery mobile| Fixed panel position</title>
+<meta charset="utf-8">
+<meta name="description" content="HTML5, js, jquery demos" />
+<!-- server
+<link rel="stylesheet" type="text/css" href="..stylesheets/main1.css"></link>
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+<link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
+-->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<style type="text/css"></style>
+<!-- jquery 2 doesn't work with these examples
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+-->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+<!--
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+-->
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	}); //end doc ready
+</script>
+</head>
+<body>
+
+	<div data-role="page" id="page_1">
+		<div data-role="panel" id="default_panel"> 
+	    <h2>Panel Header</h2>
+	    <p>You can close the panel by:
+	    	<ul>
+	    		<li>Clicking outside the panel</li>
+	    		<li>Pressing the Esc key</li>
+	    		<li>By swiping</li>
+	    		<li>Clicking the button below:</li>
+	    	</ul>
+	    </p>
+	    <a href="#page_1" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+	  </div>
+
+	  <div data-role="panel" id="fixed_panel" data-position-fixed="true"> 
+	    <h2>Panel Header</h2>
+	    <p>You can close the panel by:
+	    	<ul>
+	    		<li>Clicking outside the panel</li>
+	    		<li>Pressing the Esc key</li>
+	    		<li>By swiping</li>
+	    		<li>Clicking the button below:</li>
+	    	</ul>
+	    </p>
+	    <a href="#page_1" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-right">Close panel</a>
+	  </div>
+
+		<div data-role="header">
+			<h1>Fixed panel position</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+	    <p>Click each both button and then scroll down to see what happens</p>
+	    <a href="#default_panel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Default Panel</a>
+	    <a href="#fixed_panel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel with data-position-fixed="true"</a>
+	    <noscript><p>Ok seriously turn on your JS to see the maxtrix</p></noscript>
+			<p id="bool">Lorem ipsum dolor sit amet eu. In at placerat urna donec cras. At mattis donec sociis lectus nulla etiam porttitor sollicitudin. Malesuada arcu augue. Odio proin tellus erat donec volutpat. Phasellus justo sit sit aliquet luctus suspendisse malesuada proin. Ante ridiculus aliquip non pede gravida. Vitae enim amet iaculis eu purus ipsum a occaecat. Pretium libero etiam dui velit magna. Suspendisse tempor faucibus gravida lectus faucibus. Egestas in in. Tristique con eget. Diamlorem ante at. Vitae tristique dignissim at et sit nec et curae. Parturient nunc eget metus libero ut.
+
+			Facilisis tempus pellentesque. Purus praesent euismod. Sapien sed libero natoque non erat nam fringilla ipsum. Nec laoreet lorem. Gravida at maecenas nulla accumsan euismod. Vel nulla sit. Vel et malesuada nonummy sollicitudin nibh non id amet mauris aenean ipsum. Sit dolor wisi. Suscipit dui sit. Massa non id cras vel vitae turpis quam nullam eget justo semper nec placerat erat curabitur ut id. Magna proin cursus massa venenatis lobortis. Nunc aliquam ut nostrud et neque. Proin platea luctus vitae venenatis odio odio ipsum dolor. Eros cras curabitur. Nulla dolor arcu. Vivamus enim laoreet. Integer magnam eget. Placerat enim ultricies. Eleifend non lorem nec tincidunt orci. Malesuada magnis volutpat lorem vulputate pellentesque lacinia porttitor fermentum dictumst proin scelerisque ultrices wisi ullamcorper ullamcorper in enim vel est cursus placerat lectus a. Posuere aenean cursus. Eget in tellus. Vulputate itaque ante. Sociosqu quis velit. Dui inceptos id. Ut justo aliquam ac turpis mattis. Ante vivamus magna. Ullamcorper donec magna cubilia quam magni lectus arcu quisque. Penatibus auctor ut arcu faucibus mattis arcu at maecenas. Arcu elit in in nec ac tempor et eget.
+
+			Vestibulum cras eros. Non viverra fusce. Tellus risus leo et lacus diam. Aliquet sed mauris pede urna rutrum vitae pulvinar nunc minima sit aliquet. Vestibulum habitant in est aliquam quam. Arcu id arcu. Eleifend nec nulla. Rerum sed id. Sapien aliquam est lacinia tellus nullam magna integer magna suspendisse non pharetra ultricies lorem vestibulum. A risus amet elit lacus porta.
+
+			Congue sit suspendisse neque dictum vestibulum molestie magna metus. Morbi metus non. Fringilla fringilla ullamcorper lorem porttitor ut. Adipiscing suspendisse mollis. Phasellus est lorem. Porta mauris erat id ut nulla dignissim nec penatibus ut dignissim purus varius etiam consectetur. Ullamcorper facere molestie. Mollis eget integer sagittis habitant diam dui magna proin. Enim ipsum vestibulum sed est conubia. Vitae metus tincidunt fugiat platea consectetuer perferendis vestibulum inceptos accumsan eu arcu justo donec euismod. Et at viverra. Eleifend velit sed. Odio wisi integer. Mauris scelerisque facilisi vel molestie dui. Praesent nulla erat. Vehicula fermentum tempor elementum ante sapien ut accumsan quam. Orci blandit odio id ultricies ut. Lorem rutrum maecenas ac interdum porta tincidunt orci odio. Non nulla placerat porta sem pellentesque. Arcu maecenas tincidunt lobortis est arcu egestas faucibus urna. Justo nulla integer. In in sed. Vestibulum ridiculus aliquam. Elit nulla lectus. Diam ligula in convallis augue nam diam mi sit.
+
+			Suscipit justo nibh eleifend lobortis lectus quisque lectus amet etiam vehicula mi. Quis massa consectetuer. Tortor sollicitudin a. Justo laoreet est ultricies aliquam odio luctus metus accumsan. Dignissim egestas elementum.
+
+			Massa nec amet eget aliquam lorem enim vestibulum nam. Ut cras a. Sodales non quis. A sit imperdiet nec vitae duis sapien elit quis. Pede nunc convallis et ac vitae.
+
+			Erat sodales massa mi sem nec sed eu amet. Sagittis non commodo neque vel natoque risus vel urna. Sodales magnis vestibulum quisque molestie magna. Vestibulum at pede. Curabitur eu ante mollis parturient lobortis ante velit habitant. Integer quis nonummy. Platea pede aliquam. Pede felis nullam. Eget suscipit vitae pellentesque purus orci. Vel sed ante suspendisse sociis totam vestibulum viverra quam.
+
+			Excepteur massa fusce. Odio sit consectetuer non urna ante. Pretium donec quis viverra vivamus dolor. Turpis in neque rutrum vel lectus arcu metus amet. Praesent eget orci excepteur a sollicitudin.
+
+			Commodo id scelerisque. Aenean magna leo. Eu wisi non. Est sit quod ad vel non at sit in. Imperdiet tellus aliquet interdum ligula varius et feugiat ut auctor iaculis in.
+
+			Pellentesque torquent suspendisse malesuada et dapibus. Id phasellus elit quis vitae libero ut pede id nulla in suscipit nunc et id. Mauris maecenas eu. Diam amet elit. Gravida facilisis velit urna ipsum augue. Risus ut magna urna leo felis vitae suspendisse tempor. Pulvinar massa nunc dis non lacus. Mauris ut mi. Consequat a fermentum erat ornare phasellus. Mi leo dictum justo morbi morbi. Adipiscing varius dis hendrerit est orci. Eu mattis vulputate. Arcu sollicitudin vitae. Pede in nec. Mollis sit convallis. Eleifend ut molestie. Aliquam bibendum pellentesque. Sollicitudin felis fusce nulla lacus posuere ante nibh leo ligula sed sagittis in aptent sagittis interdum vestibulum vestibulum ultricies tellus risus mi pede mauris. Mattis orci sed egestas lacus phasellus amet sit dignissim. Sollicitudin tellus enim porttitor fringilla eros tristique rhoncus maecenas elit nam massa. A quis neque. Vitae pretium cras. Ut vel in massa primis dolor adipiscing donec viverra. Ratione pede eget. Fermentum morbi rutrum. Faucibus lorem et. Dis massa minim interdum adipiscing quis dictum duis etiam justo in est. Faucibus aliquam viverra. Mauris quis dui. Libero ultrices tincidunt nec urna arcu.
+
+			Potenti aenean commodo vivamus at et vel vel leo. Amet vitae duis. Vivamus tristique amet. Imperdiet ante aptent vel nec consectetuer pellentesque suspendisse sapien. At auctor elit. Ultrices porttitor in. Nulla a risus. Fusce at lacus. Volutpat non nibh. Pellentesque fames elementum suspendisse mollis felis in quam turpis wisi eros vel morbi interdum tempor. Praesent vivamus a. Vel quis non nisl habitasse in. Hendrerit nec sunt adipisicing nibh velit. Eget tellus autem ipsum vel rutrum. Augue ipsum et. Vestibulum lacinia natoque. Tristique non pellentesque sed vitae pellentesque elit wisi vehicula. Aliquet vivamus diam facilisis viverra hymenaeos. Orci consectetuer parturient. Morbi lorem habitasse. Dui vestibulum eget non et pharetra. Non sit ac dignissim pellentesque aliquam metus quam ut adipiscing lectus ut nunc est sem ut ac dui eros volutpat sed justo tellus aliquet. Sed dui eget. Amet quam vivamus. Urna amet vivamus. Congue velit suspendisse netus mi ipsum at at pulvinar. Vestibulum aliquet ipsum vestibulum sed sed. Cras dolor volutpat ullamcorper eget non tristique aliquam maecenas eros libero vitae. Lacus non lorem. Habitasse fermentum imperdiet quis eget sed lacus et elit in urna justo. Maecenas libero adipiscing amet sapien eu. Ac amet iaculis ligula sed nunc nunc magna dictum. Vitae consequat mattis. Pede feugiat leo quam phasellus lectus. Veniam condimentum lacinia.
+
+			Sed orci vel. Est pellentesque varius taciti erat tempor. Aenean etiam justo porttitor in natoque. Vel risus vel nullam integer ut. Quam neque enim molestias rutrum tellus. Quis vel pede. Volutpat molestie et vivamus neque quisque. Tortor gravida nunc malesuada proin ut in lorem luctus malesuada cras diam arcu at quam wisi tincidunt wisi. Integer tempor vel. Urna praesent arcu sollicitudin nullam platea. Purus ac curabitur. Dictum eleifend conubia sodales facilisis elementum. Eu purus pellentesque sed molestiae imperdiet. In iste quis. Sodales neque sed nullam nullam quam quo malesuada a. Tempus volutpat dui. Rhoncus elit amet. Turpis vivamus quis. At neque in. Cras egestas sem. Nibh tincidunt cursus. Vitae quisque ut suscipit malesuada aliquam. Lectus mauris natoque id dis ut. Aliquam turpis odio ipsum mollis fermentum. Tincidunt mattis vel urna mi luctus quam aenean quam. Lorem diam proin. Sapien ullamcorper vitae. Felis morbi elit. Luctus nec at interdum fusce mus felis mauris ac morbi eget molestie. Atque amet eleifend. Id nulla nunc ad cras lobortis donec ut id. Fusce imperdiet suspendisse. Bibendum vivamus sit. Posuere ultricies proin morbi mauris mollis. Auctor velit semper. Taciti et eu aliquam tempus massa congue sociis morbi consectetuer id faucibus. Nam praesent lobortis. Malesuada sed auctor. Volutpat elit bibendum consequat tellus eget magna magna orci. Eu ullamcorper aliquam. Amet mattis sed lorem temporibus duis egestas felis urna varius ut neque donec turpis aliquet urna wisi sit sollicitudin non dolor sodales conubia fusce interdum maecenas vel aliquam non sodales hac curabitur consequat. Ut nunc ut ut felis urna fermentum ut enim in tempus eros eleifend praesent eget luctus quam sed egestas vestibulum eu et pellentesque mollis. Hendrerit nec turpis proin et maecenas aliquam proin mollis. Volutpat fames risus. Vitae sed aliquam cras rutrum sagittis. Eget dapibus nibh. Risus nullam magnis. Leo dis mauris mi fringilla et. Nulla consequat ante cras ultrices in. Vivamus cras nec. Ornare lobortis donec. Nam adipiscing ultrices. Ullamcorper turpis sit ut etiam vitae parturient velit dolor. Purus mi elit dictumst modi per. Maecenas vel vivamus dis ante sed eu ligula parturient. Amet duis orci. Erat rutrum in diam erat convallis neque id quis. Amet scelerisque ut. Pellentesque vitae vel. Vehicula eros vulputate.
+
+			Malesuada sem mollis scelerisque tempus faucibus sapien nam sodales. Quam pharetra volutpat ut convallis delectus nisi pellentesque dolor. Nec sit egestas feugiat ut nulla. Phasellus alias montes. Suscipit nec magna dictum magna eget. Vestibulum malesuada lacinia molestie libero libero. Et sapien gravida mi aenean mauris. Etiam nunc felis nisl suspendisse mattis. Non vulputate ac vel vitae lectus. Id mollis tortor orci ullamcorper nulla duis neque lacus. Pede donec aptent mauris duis sit eleifend blandit at quis arcu amet. Facilisis pellentesque morbi. Ultricies integer eget. Vitae proin diam. Vehicula vitae sed.
+
+			Proin id purus. Interdum mauris arcu ante morbi vel justo dis sed. Vel erat vitae. Ut eros cras dolor pede sit augue urna eleifend. Lectus torquent laoreet. Justo dolor mi feugiat mus magna. Lectus sed nibh. Orci maecenas enim. Accumsan pretium sit. Praesent enim bibendum. Ultrices sed accumsan. Vehicula odio sed. Laoreet vitae quam orci mi velit. Leo quis etiam. Tincidunt vitae facilisis. At feugiat eget arcu id mauris. Porttitor urna pharetra cursus porttitor tincidunt. Arcu vitae nullam nunc in tristique. Nam semper venenatis nam id eget. Eget est nec. Nostra id erat hac dictum facilisis dignissim quisque tincidunt. Nec sociis ullamcorper et ut fringilla laoreet necessitatibus proin. In scelerisque phasellus. Feugiat odio massa. Dolor in fermentum commodo cras purus. Felis error odio congue pellentesque quis. Ut tincidunt felis. Lacus in blandit nibh lobortis quis litora quis amet sit amet sagittis. Et posuere curabitur donec rhoncus nec. Quis et orci scelerisque sed ac. Eros erat dolor. Luctus proin neque. Rutrum pede nunc. Est orci lorem at sed mi. Nunc suscipit sit luctus maecenas sit enim aliquam commodo quam ut quis dui vehicula amet. Aliquet non ipsum. Eget cursus ante suspendisse sem aliquam eu sociosqu justo. Cras consectetuer eleifend dolor mi porttitor wisi sed at id sit mi. Vivamus fusce imperdiet magna morbi integer proin suscipit sit ac corporis enim justo auctor fusce aliquam vitae ut porttitor faucibus massa. Vitae diam mauris sollicitudin dis cras. Vel diam nec arcu fusce velit nulla rutrum vestibulum. Pede varius massa condimentum volutpat porttitor euismod duis diam. Mi luctus pede elit sed tellus. Urna rhoncus nulla blandit massa egestas. Neque velit metus magna ut eu massa est justo. Elementum et nulla. Aliquam faucibus in. Et praesent in nec et scelerisque et convallis arcu eu quis morbi nibh vitae hac. Nec semper sodales. Varius lacus sed.
+
+			Donec id cras. Diam tellus sem. Elit in in erat aliquam lacus. Sollicitudin fringilla eleifend ad suscipit elementum ante id id itaque lacus ligula cursus nulla quam. Quis dignissim pulvinar. Enim sed integer. Litora non rutrum. At vestibulum eros mollis ligula vehicula. Vel non id curae odio metus ullamcorper iaculis hendrerit. Morbi eu sed id eget morbi quis consectetuer phasellus.
+
+			Magna ligula a elit pede nec. Interdum felis magnis. Montes mauris aenean. Congue in euismod etiam ut volutpat. Molestie amet ac. Elit turpis nisl lacus volutpat dolor. Facilisis eu quisque auctor vestibulum non sollicitudin viverra in libero cras enim. Arcu hac pharetra natoque quam in. Porttitor maecenas ut. Vestibulum nam pellentesque vestibulum distinctio elementum lectus consectetuer a volutpat mattis viverra.
+
+			In at sit. Fermentum iaculis suspendisse. Nunc neque dolor a mollis viverra. Placerat enim leo non dignissim quam sapien justo non enim convallis dolor leo rutrum massa dictum con pretium. Vel donec vestibulum. Vel turpis nunc erat ac voluptas. Velit ligula turpis. Nulla aenean pede nec fringilla aliquam. Nam ut metus. Arcu mollis vel. Pede nulla rutrum scelerisque accumsan sem. Ut sit donec con platea pellentesque massa sem nibh. Auctor feugiat suspendisse eros aptent mauris. Enim elementum nascetur praesent felis.</p>
+			<p>Winner Winner</p>
+	  </div>
+
+		<div data-role="footer">
+			<h1>Footer: text</h1>
+		</div>
+	</div>
+ 
+
+<br><br><br>
+<script>
+	//document.getElementById("").
+
+
+	$(document).ready(function(){
+
+	}); //end doc ready
+</script>
+</body>
+</html>
