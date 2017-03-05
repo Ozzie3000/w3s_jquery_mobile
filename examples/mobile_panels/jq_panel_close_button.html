@@ -31,6 +31,24 @@
 <body>
 
 	<div data-role="page" id="page_1">
+		<div data-role="panel" id="panel_1">
+			<h2>Panel Header</h2>
+			<p>You found me!</p>
+			<p>To escape
+				<ul>
+					<li>Click the close button</li>
+					<li>Click esc</li>
+					<li>Click outside panel</li>
+					<li>Swipe</li>
+				</ul>
+			</p>
+
+			<a href="#page_1" id="close"data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">I'm bored. Let's roll</a>
+			<div>
+				<p id="goteem"></p>
+			</div>
+		</div>
+
 		<div data-role="header">
 			<h1>Panel with close button</h1>
 		</div>
@@ -56,10 +74,9 @@
 		function looker(){
 			var stuff = $("#goteem");
 			stuff.css({
-				"visibility":"visible",
-				"text":"Look down buddy"
+				"visibility":"visible"
 			});
-			//stuff.text("Look down buddy");
+			stuff.text("Look down buddy");
 		}
 	
 		$("#open").click(function(){
