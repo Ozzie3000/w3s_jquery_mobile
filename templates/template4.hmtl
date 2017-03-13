@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>JS and jQuery mobile| Two column layout</title>
+<title>JS and jQuery mobile| </title>
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
 <!-- server
@@ -32,7 +32,7 @@
 
 	<div data-role="page" id="page_1">
 		<div data-role="header">
-			<h1>Two column layout</h1>
+			<h1></h1>
 		</div>
 
 		<div data-role="footer">
