@@ -31,15 +31,11 @@
 <body>
 
 	<div data-role="page" id="page_1">
-		<div data-role="header">
-			<h1>Panel with list items</h1>
-		</div>
-
 		<div data-role="panel" id="abe_page"> 
 	    <h2>Abraham the Wise</h2>
 	    <p>Phone number: 777-777-7777</p>
 	    <p>Address: 123 Any street</p>
-	    <br>Somewhere, State 11111 USA</p>
+	    <p>Somewhere, State 11111 USA</p>
 	    <p>Email: gotellsomeone@gmail.com</p>
 	    <a href="#page_1" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
 	  </div>
@@ -48,7 +44,7 @@
 	    <h2>Zach the Crazy</h2>
 	    <p>Phone number: 888-888-8888</p>
 	    <p>Address: 456 Any street</p>
-	    <br>Somewhere, State 22222 USA</p>
+	    <p>Somewhere, State 22222 USA</p>
 	    <p>Email: thelastone@gmail.com</p>
 	    <a href="#page_1" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
 	  </div>
@@ -56,6 +52,20 @@
 		<div data-role="footer">
 			<h1>Footer: text</h1>
 		</div>
+
+		<div data-role="main" class="ui-content">
+	    <h2>My contact list</h2>
+	    <ul data-role="listview" data-autodividers="true" data-inset="true">
+	      <li><a href="#abe_page">Abraham</a></li>
+	      <li><a href="#zach_page">Zach</a></li>
+	    </ul>
+	  </div>
+
+		<div data-role="header">
+			<h1>Panel with list items</h1>
+		</div>
+
+		
 	</div>
  
 
