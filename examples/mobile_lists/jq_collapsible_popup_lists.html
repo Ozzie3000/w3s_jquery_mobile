@@ -35,10 +35,19 @@
 			<h1>Collapsible popup lists</h1>
 		</div>
 
-		<div data-role="popup" id="popup_1" class="ui-content">
-			<h3>My contacts</h3>
-			<div data-role="collapsible-set" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="width: 300px;">
-				<div></div>
+		<div data-role="main" claas="ui-contenti">
+			<h2>My contatcs</h2>
+			<a href="#popup_1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-search ui-btn-icon-left">Directory</a>
+			<div data-role="popup" id="popup_1" class="ui-content">
+				<h3>Directory</h3>
+				<div data-role="collapsible-set" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="width: 300px;">
+					<div data-role="collapsible">
+						<h4>A</h4>
+							<ul data-role="listview">
+								<li><a href="#">A</a></li>
+							</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 
