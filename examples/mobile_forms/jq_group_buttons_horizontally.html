@@ -37,13 +37,13 @@
 
 		<div data-role="main" class="ui-content">
 			<form method="post" action="">
-				<fieldset data-role="controlgroup" data-type="horizontal">
-					<p>Gender you think is most often picked for class wizard?</p>
+				<fieldset data-role="controlgroup" data-type="horizontal">					
 					<legend>Choose wisely</legend>
+					<p>Gender you think is most often picked for class wizard?</p>
 					<label for="xy">Male</label>
-					<input type="radio" name="male" id="xy">
+					<input type="radio" name="gender" id="xy" value="male">
 					<label for="xx">Female</label>
-					<input type="radio" name="female" id="xx">
+					<input type="radio" name="gender" id="xx" value="female">
 				</fieldset>
 				<br>
 
@@ -61,6 +61,9 @@
 					<label for="sorc">Sorceress</label>
 					<input type="checkbox" name="uselessattr" id="sorc" value="Sorceress">
 				</fieldset>
+				<input type="submit" data-line="true" value="submit">
+				<br>
+				<div id="target">&nbsp;</div>
 			</form>
 		</div>
 
@@ -73,9 +76,16 @@
 <br><br><br>
 <script>
 	//document.getElementById("").
-
-
 	$(document).ready(function(){
+		//user knows what to do
+		/*
+		$("input[type=checkbox], input[type=radio]").click(function(){
+			if ("input:checked") {
+				$("#target").text("you can click stuff");
+			}else{
+				$("#target").text("");
+			}
+		}); */
 
 	}); //end doc ready
 </script>
