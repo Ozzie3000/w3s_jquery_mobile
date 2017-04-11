@@ -35,11 +35,11 @@
 			<h1>Form pop up</h1>
 		</div>
 
-		<div data-role>
-			<a href="#form_1">"Show me proper form"</a>
+		<div data-role="main" class="ui-content">
+			<a href="#form_1" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-search ui-btn-left">"Show me proper form"</a>
 			<!-- actual form  -->
-			<div>
-				<form>
+			<div data-role="popup" id="form_1" class="ui-content" style="min-width: 300px;">
+				<form method="post" action="">
 					<div>
 						<h3></h3>
 					</div>
