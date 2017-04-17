@@ -38,7 +38,7 @@
 		<div data-role="main" class="ui-content">
 			<form method="post" action="">
 				<div class="ui-field-contain">
-					<fieldset>
+					<fieldset data-role="controlgroup" data-type="horizontal">
 						<legend>Schedule and appointment: </legend>
 						<label for="days">Select Day</label>
             <select name="stuff1" id="days">
@@ -51,7 +51,8 @@
               <option value="sat">Saturday</option>
               <option value="sun">Sunday</option>
             </select>
-            <br>
+
+            <!-- next button -->
             <label for="time">Select Time</label>
             <select name="time" id="time">
             	<option disabled="true" selected="true">Times available</option>
@@ -67,6 +68,8 @@
             </select>
 					</fieldset>
 				</div>
+				<br>
+				<input type="submit" data-inline="true" value="submit">
 			</form>
 		</div>
 
