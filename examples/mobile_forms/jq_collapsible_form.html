@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>JS and jQuery mobile| Collapsible form</title>
+<title>JS and jQuery mobile| collapsible forms. selected</title>
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
 <!-- server
@@ -14,10 +14,7 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <style type="text/css"></style>
-<!-- jquery 2 doesn't work with these examples
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
--->
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
 <!--
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -32,18 +29,28 @@
 
 	<div data-role="page" id="page_1">
 		<div data-role="header">
-			<h1>Collapsible form</h1>
+			<h1>Collapsible forms with selected</h1>
 		</div>
 
-		<div>
-			<form>
-				<fieldset>
-					<legend>I'm the lengend you heard about</legend>
-						<label>User Name: </label>
-						<input type="text" name="whyisthisevenhere" id="overage">
-				</fieldset>
-			</form>
-		</div>
+		<div data-role="main" class="ui-content">
+	    <form method="post" action="sampleform.asp">
+	      <fieldset data-role="collapsible">
+	        <legend>Click me - So that I may collapse!</legend>
+	          <label for="fullname">Full Name:</label>
+	          <input type="text" name="text" id="fullname">
+	          <p>Favorite Color:</p>
+	        <div data-role="controlgroup">
+	          <label for="red">Red</label>
+	          <input type="checkbox" name="favcolor" id="red" value="red">
+	          <label for="green">Green</label>
+	          <input type="checkbox" name="favcolor" id="green" value="green">
+	          <label for="blue">Blue</label>
+	          <input type="checkbox" name="favcolor" id="blue" value="blue" checked="true">
+	        </div>
+	      <input type="submit" data-inline="true" value="Submit">
+	      </fieldset>
+	    </form>
+	  </div>
 
 		<div data-role="footer">
 			<h1>Footer: text</h1>
