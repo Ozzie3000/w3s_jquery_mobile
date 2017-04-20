@@ -37,17 +37,21 @@
 		
 		<div data-role="main" class="ui-content">
 			<form method="post" action="">
-				<legend>The man the legend</legend>
-					<label for="days">Days</label>
-					<select>
-						<option value="mon">Monday</option>
-						<option value="tue">Tuesday</option>
-						<option value="wed">Wednesday</option>
-						<option value="thu">Thursday</option>
-						<option value="fri">Friday</option>
-						<option value="sat">Saturday</option>
-						<option value="sun">Sunday</option>
-					</select>
+				<fieldset>
+					<legend>The man the legend</legend>
+						<label for="days">Days</label>
+						<select id="days" icon-pos="left">
+							<option value="mon">Monday</option>
+							<option value="tue">Tuesday</option>
+							<option value="wed">Wednesday</option>
+							<option value="thu">Thursday</option>
+							<option value="fri">Friday</option>
+							<option value="sat">Saturday</option>
+							<option value="sun">Sunday</option>
+						</select>
+					</fieldset>
+					<br>
+					<input type="submit" data-inline="true" value="submit">
 			</form>
 		</div>
 
