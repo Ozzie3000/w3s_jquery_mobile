@@ -36,9 +36,10 @@
 		</div>
 
 		<div data-role="main" class="ui-content">
-			<form>
-				<div>
-					<label>Price: </label>
+			<form method="post" action="">
+				<div data-role="ranslider">
+					<label for="price_min">Price: </label>
+					<input type="range" id="price_min" value="200" min="0" max="999">
 				</div>
 			</form>
 		</div>
