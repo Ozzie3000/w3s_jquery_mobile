@@ -37,10 +37,15 @@
 
 		<div data-role="main" class="ui-content">
 			<form method="post" action="">
-				<div data-role="ranslider">
+				<div data-role="rangeslider">
 					<label for="price_min">Price: </label>
-					<input type="range" id="price_min" value="200" min="0" max="999">
+					<input type="range" id="price_min" value="200" min="1" max="999">
+					<label for="price_max">Price: </label>
+					<input type="range" id="price_max" value="800" min="0" max="999">
 				</div>
+				<br>
+				<input type="submit" data-inline="true" value="submit">
+				<p>The key here is the data-role="rangeslider" div encapsulating both inputs.  Otherwise they would show up as two separate bars</p>
 			</form>
 		</div>
 
