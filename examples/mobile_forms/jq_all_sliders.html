@@ -49,10 +49,12 @@
 				<label for="highlight_slider">Slider with highlighted track: </label>
 				<input type="range" id="highlight_slider" value="50" min="0" max="100" data-highlight="true">
 				<br>
-				<!--requires an extra div -->
-				<div>
+				<!--requires an extra div  with data-role=rangeslider-->
+				<div data-role="rangeslider">
 					<label for="range_slider_min">Dual sliders: </label>
-					<input type="range" id="range_slider_min" value="111" min="0" max="999">					
+					<input type="range" id="range_slider_min" value="111" min="0" max="999">
+					<label for="range_slider_max">Dual sliders: </label>
+					<input type="range" id="range_slider_max" value="888" min="0" max="999">
 				</div>
 				<br>
 			</form>
