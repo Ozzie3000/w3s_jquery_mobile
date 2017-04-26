@@ -13,7 +13,25 @@
 -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<style type="text/css"></style>
+<style type="text/css">
+	/* Custom indentations are needed because the length of custom labels differs from
+	   the length of the standard labels */
+	.custom-size-flipswitch.ui-flipswitch .ui-btn.ui-flipswitch-on {
+	    text-indent: -4em;
+	}
+	.custom-size-flipswitch.ui-flipswitch .ui-flipswitch-off {
+	    text-indent: 3em;
+	}
+	/* Custom widths are needed because the length of custom labels differs from
+	   the length of the standard labels */
+	.custom-size-flipswitch.ui-flipswitch {
+	    width: 12em;
+	}
+	.custom-size-flipswitch.ui-flipswitch.ui-flipswitch-active {
+	    padding-left: 7em;
+	    width: 1.875em;
+}
+</style>
 <!-- jquery 2 doesn't work with these examples
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 -->
@@ -35,10 +53,13 @@
 			<h1>Styled switch</h1>
 		</div>
 
-		<div>
+		<div data-role="main" class="ui-content">
 			<form method="post" action="">
-				<label></label>
-				<input type="checkbox" id="target_1">
+				<label for="target_1">Click the button please</label>
+				<input type="checkbox" id="target_1" data-role="flipswitch" data-wrapper-class="custom-size-flipswitch">
+				<br>
+				<br>
+				<input type="submit" value="submite" data-inline="true">
 			</form>
 		</div>
 
