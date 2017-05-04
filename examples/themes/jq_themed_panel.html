@@ -31,11 +31,19 @@
 <body>
 
 	<div data-role="page" id="page_1">
+		<div data-role="panel" id="panel_1" data-theme="b"> 
+	    <h2>Panel Header</h2>
+	    <p>I am the secretly themed panel</p>
+	    <p>Or maybe just a themed panel that is secret</p>
+	    <p> 
+	    </p>
+	  </div> 
+
 		<div data-role="header">
 			<h1>Themed Panel</h1>
 		</div>
 
-		<div>
+		<div data-role="main" class="ui-content">
 			<p>Click the button to see the secret themed panel</p>
 			<a href="#panel_1" class="ui-btn ui-btn-b ui-btn-inline ui-shadow">Do it!</a>
 		</div>
