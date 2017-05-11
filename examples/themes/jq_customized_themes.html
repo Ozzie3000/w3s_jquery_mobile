@@ -13,7 +13,24 @@
 -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<style type="text/css"></style>
+<style type="text/css">
+	.ui-bar-f {
+    color: red;
+    background-color: yellow;
+	}
+
+	.ui-body-f {
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+	}
+
+	.ui-page-theme-f {
+    font-weight: bold;
+    color: white;
+    background-color: green;
+	}
+</style>
 <!-- jquery 2 doesn't work with these examples
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 -->
@@ -30,7 +47,7 @@
 </head>
 <body>
 
-	<div data-role="page" id="page_1">
+	<div data-role="page" id="page_1" data-theme="">
 		<div data-role="header">
 			<h1>Customized themes</h1>
 		</div>
