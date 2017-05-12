@@ -26,6 +26,11 @@
 	$(document).ready(function(){
 		
 	}); //end doc ready
+	$(document).on("pagecreate", "#page_1", function(){
+		$("p").on("taphold", function(){
+			$(this).hide(1000);
+		});
+	})
 </script>
 </head>
 <body>
