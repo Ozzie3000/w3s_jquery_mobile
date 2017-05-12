@@ -24,7 +24,9 @@
 -->
 <script type="text/javascript">
 	$(document).ready(function(){
-		
+		$("p").on("pagecreate", "#pageone", function(){
+			$(this).hide(1000);
+		});
 	}); //end doc ready
 </script>
 </head>
@@ -38,7 +40,7 @@
 		<div>
 			<p>Tap this to make it disappper</p>
 			<p>Don't be shy</p>
-			<p></p>
+			<p>Bye you box Troll</p>
 		</div>
 
 		<div data-role="footer">
