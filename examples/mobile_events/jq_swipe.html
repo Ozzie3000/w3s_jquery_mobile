@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>JS and jQuery mobile| Tap hold</title>
+<title>JS and jQuery mobile| Swipe event</title>
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
 <!-- server
@@ -26,25 +26,13 @@
 	$(document).ready(function(){
 		
 	}); //end doc ready
-	$(document).on("pagecreate", "#page_1", function(){
-		$("p").on("taphold", function(){
-			$(this).hide(1000);
-		});
-	});
 </script>
 </head>
 <body>
 
 	<div data-role="page" id="page_1">
 		<div data-role="header">
-			<h1>Tap hold or hold the tap?</h1>
-		</div>
-
-		<div>
-			<p>Tap and hold for a bit</p>
-			<p>On each Paragraph</p>
-			<p>You feel should just disappear</p>
-			<p>Buh Bye!</p>
+			<h1>Swipe event</h1>
 		</div>
 
 		<div data-role="footer">
