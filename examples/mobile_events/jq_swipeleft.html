@@ -25,7 +25,7 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 	  $("p").on("swipeleft",function(){
-	    $("target_1").text("Swipe detected!");
+	    $("#target_1").text("Swipe detected!");
 	  });
 
 	}); //end doc ready
@@ -39,10 +39,14 @@
 		</div>
 
 		<div data-role="main" class="ui-content">
-	    <p style="border:3px solid black;margin:5px;">Swipe to the left; to the left!  I know right</p>
+	    <p>Swipe to the left; to the left!  I know right</p>
+	    <p style="border:3px solid black;height:333px;width:333px;"></p>
+	    <p><span style="color:blue"></span></p>
 	  </div>
 
-	  <div></div>
+	  <div>
+		  	<span style="color:blue" id="target_1"></span>
+	  </div>
 
 		<div data-role="footer">
 			<h1>Footer: text</h1>
