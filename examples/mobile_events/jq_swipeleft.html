@@ -28,6 +28,12 @@
 	    $("#target_1").text("Swipe detected!");
 	  });
 
+	  function clearMe(){
+	  	$("span").text("");
+	  }
+
+	  setInterval(function(){ clearMe();}, 2500);
+
 	}); //end doc ready
 </script>
 </head>
