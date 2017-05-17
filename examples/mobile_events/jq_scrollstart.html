@@ -23,6 +23,11 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagecreate","#page_1",function(){
+	  $(document).on("scrollstart",function(){
+	    alert("Started scrolling!");
+	  });
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
@@ -37,6 +42,8 @@
 
 		<div data-role="main" class="ui-content">
 	    <p><b>Tip:</b> resize the window if needed</p>
+
+	    <p></p>
 	  </div>
 
 		<div data-role="footer">
