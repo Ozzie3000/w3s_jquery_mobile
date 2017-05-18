@@ -23,14 +23,18 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+// doesn't seem to be too reliable or 100% reliable
 	$(document).on("pagecreate",function(event){
 	  $(window).on("orientationchange",function(){
 	    if(screen.orientation.type === "portrait-primary"){
 	      $("p").text("The orientation has changed to portrait!").css({"background-color":"yellow","font-size":"200%"});
-	      console.log("portrait");
-	    }else{
+	      console.log(screen.orientation.type);
+	    }else if(screen.orientation.type === "landscape-primary"){
 	      $("p").text("The orientation has changed to landscape!").css({"background-color":"cyan","font-size":"300%"});
-	      console.log("landscape");
+	      console.log(screen.orientation.type);
+	    }else{
+	    	$("p").text("The orientation has changed to yet again!").css({"background-color":"red","font-size":"300%"});
+	    	console.log(screen.orientation.type);
 	    }
 	  });                   
 	});
