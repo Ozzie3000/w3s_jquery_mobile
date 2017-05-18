@@ -23,6 +23,12 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagecreate",function(event){
+	  $(window).on("orientationchange",function(event){
+	    alert("Orientation changed to: " + event.orientation);
+	  });                     
+	});
+	
 	$(document).ready(function(){
 		
 	}); //end doc ready
