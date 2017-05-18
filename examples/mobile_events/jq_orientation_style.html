@@ -23,6 +23,18 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagecreate",function(event){
+	  $(window).on("orientationchange",function(){
+	    if(screen.orientation.type === "portrait-primary"){
+	      $("p").text("The orientation has changed to portrait!").css({"background-color":"yellow","font-size":"200%"});
+	      console.log("portrait");
+	    }else{
+	      $("p").text("The orientation has changed to landscape!").css({"background-color":"cyan","font-size":"300%"});
+	      console.log("landscape");
+	    }
+	  });                   
+	});
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
@@ -35,7 +47,7 @@
 			<h1>Orientation Style</h1>
 		</div>
 
-		<div>
+		<div data-role="main" class="ui-content">
 			<p>The wheels go round and round</p>
 			<p><b>Important! </b> Different look and feel for portrait vs landscape</p>
 		</div>
