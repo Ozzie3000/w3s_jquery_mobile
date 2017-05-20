@@ -26,7 +26,11 @@
 	$(document).on("pagebeforecreate",function(){
 	  alert("pagebeforecreate event fired - the page is about to be initialized. Pre jquery");
 	});
-	
+
+	$(document).on("pagecreate",function(){
+	  alert("pagecreate event fired - the page has been created, but still not finished");
+	});
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
