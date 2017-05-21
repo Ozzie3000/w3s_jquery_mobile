@@ -28,6 +28,10 @@
 	  alert("pagecontainerload event fired!\nURL: " + data.url);
 	});
 
+	$(document).on("pagecontainerloadfailed",function(event,data){
+	  alert("The requested page does not exist");
+	});
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
