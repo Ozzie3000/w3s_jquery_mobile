@@ -31,6 +31,11 @@
 	  alert("pageshow event fired - 2nd page is now served");
 	});
 
+	$(document).on("pagebeforehide","#page_2",function(){
+	  alert("pagebeforehide event fired - 2nd page is about to be hidden");
+	});
+
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
