@@ -27,6 +27,9 @@
 	  alert("pagebeforeshow event fired - 2nd page is about to be served");
 	});
 
+	$(document).on("pageshow","#page_2",function(){
+	  alert("pageshow event fired - 2nd page is now served");
+	});
 
 	$(document).ready(function(){
 		
