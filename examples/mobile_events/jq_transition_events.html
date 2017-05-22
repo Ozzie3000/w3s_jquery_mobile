@@ -35,6 +35,9 @@
 	  alert("pagebeforehide event fired - 2nd page is about to be hidden");
 	});
 
+	$(document).on("pagehide","#page_2",function(){
+	  alert("pagehide event fired - 2nd page is now hidden");
+	});
 
 	$(document).ready(function(){
 		
