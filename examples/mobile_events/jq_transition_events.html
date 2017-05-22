@@ -23,6 +23,11 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 -->
 <script type="text/javascript">
+	$(document).on("pagebeforeshow","#page_2",function(){
+	  alert("pagebeforeshow event fired - 2nd page is about to be served");
+	});
+
+
 	$(document).ready(function(){
 		
 	}); //end doc ready
