@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>JS and jQuery mobile| Radio button</title>
+<title>JS and jQuery mobile| Data attribute</title>
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
 <!-- server
@@ -32,7 +32,7 @@
 
 	<div data-role="page" id="page_1">
 		<div data-role="header">
-			<h1>Radio</h1>
+			<h1>Data attribute</h1>
 		</div>
 
 
@@ -45,19 +45,19 @@
 						<th style="width:60%">Description</th>
 					</tr>
 					<tr>
-						<td>data-mini</td>
-						<td>true | <b>false</b></td>
-						<td>Used to specify if the button should be a smaller version</td>
+						<td>data-position-to</td>
+						<td><b>origin</b> | jQuery selector | window</td>
+						<td>Used to specify the position of popup boxes.  Origin - default positions the popup over the link that opened it.  Using a jQuery selector - positions it over the specified element. Window- positions it in the middle of the screen.</td>
 					</tr>
 					<tr>
-						<td>data-role</td>
-						<td>none</td>
-						<td>Used to prevent jQuery mobile from styling radio buttons as enhanced buttons</td>
+						<td>data-rel</td>
+						<td>pop</td>
+						<td>Used for opening the popup box</td>
 					</tr>
 					<tr>
-						<td>data-theme</td>
-						<td>letter z-z</td>
-						<td>Used to specify the theme color of the radio button</td>
+						<td>data-transition</td>
+						<td>fade | flip | flow | pop | slide | slidedown | slidefade | slideup | turn | <b>none</b></td>
+						<td>Used to specify how to transition from one page to the other</td>
 					</tr>
 				</tbody>
 			</table>
