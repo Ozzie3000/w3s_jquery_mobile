@@ -37,6 +37,9 @@
 
 
 		<div data-role="main" class="ui-content">
+			<div>
+				When you entered: &nbsp;&nbsp; <span id="target_1"></span>
+			</div>
 		</div>
 
 		<div data-role="footer">
@@ -51,7 +54,8 @@
 
 
 	$(document).ready(function(){
-
+		var timey = Date();
+		$("#target_1").text(timey);
 	}); //end doc ready
 </script>
 </body>
